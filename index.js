@@ -1,20 +1,7 @@
-let heading = document.getElementById("main-heading");
-heading.innerText = 'Fruit World';
+let items = document.getElementsByClassName("fruit");
 
-heading.style.color = "orange";
+items[2].style.backgroundColor = "yellow";
 
-let headerDiv = document.getElementById("header");
-headerDiv.style.backgroundColor = "green";
-
-headerDiv.style.borderBottom = "5px solid orange";
-
-let basketHeading =
-    document.getElementById("basket-heading");
-basketHeading.style.color = "green";
-
-let thanksDiv = document.getElementById("thanks");
-
-let para = document.createElement("p");
-para.textContent = "Please visit us again";
-
-thanksDiv.appendChild(para);
+for (let i = 0; i < items.length; i++){
+    items[i].style.fontWeight = "bold";
+}
