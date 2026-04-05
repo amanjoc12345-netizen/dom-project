@@ -1,7 +1,6 @@
-let items = document.getElementsByClassName("fruit");
+let items = document.getElementsByTagName("li");
 
-items[2].style.backgroundColor = "yellow";
-
+items[4].style.color = "red";
 for (let i = 0; i < items.length; i++){
-    items[i].style.fontWeight = "bold";
+    items[i].style.fontStyle = "italic";
 }
